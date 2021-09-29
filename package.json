@@ -1,0 +1,43 @@
+{
+  "name": "kealabs.combitus",
+  "description": "Combitus",
+  "version": "0.0.0",
+  "author": "jemmyw",
+  "repository": {
+    "type": "git",
+    "url": "TODO: Add the GitHub URL to your extension in package.json"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "node build.js"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "views": {
+        "combitus": {
+          "title": "Combitus",
+          "entryPoint": "dist/bundle.js",
+          "host": "attribute",
+          "recordTypes": [
+            "Feature",
+            "Epic",
+            "Requirement"
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "@types/color": "^3.0.2",
+    "@vue/component-compiler": "^4.2.4",
+    "@vue/composition-api": "^1.2.2",
+    "color": "^4.0.1",
+    "esbuild": "^0.13.3",
+    "lodash.escaperegexp": "^4.1.2",
+    "piscina": "^2.2.0",
+    "postcss": ">=6.0.0",
+    "vue": "^2.6.14",
+    "vue-clickaway": "^2.2.2",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
